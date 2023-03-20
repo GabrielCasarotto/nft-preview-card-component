@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    line-height: 1.5;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-card{
+    max-width: 350px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 1.5rem 1.6rem 2rem;
+    border-radius: 30px;
+    height: 600px;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+}
+
+.img{
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+}
+
+.main-image{
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 20px;
+    padding-bottom: 15px;
+}
+
+.img {
+position: relative;
+}
+
+.overlay {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+height: 95%;
+width: 100%;
+opacity: 0;
+background-color: hsl(178, 100%, 50%);
+border-radius: 10px;
+}
+
+.view {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+opacity: 0;
+transition: all 0.3s ease;
+}
+
+.view img {
+max-width: 100%;
+max-height: 100%;
+}
+
+
+.img {
+position: relative;
+}
+
+.img:hover .overlay {
+opacity: 0.5;
+cursor: pointer;
+}
+
+.img:hover .view {
+opacity: 1;
+}
+
+
+
+/* text-content*/
+
+.text > h1{
+    color: white;
+    margin-bottom: 1.3rem;
+}
+
+.text > h1:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.text > p{
+font-size: 1.1rem;
+  letter-spacing: 0.015em;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.eth{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0 1.4rem;
+}
+
+.eth-value{
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+}
+
+.icon {
+    margin-right: 0.5rem;
+
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+.hr{
+    color: hsl(215, 51%, 70%);
+}
+
+/*creator part*/
+
+.creator{
+  display: flex;
+  border-top: 1px solid var(--line-colour);
+  padding-top: 1rem;
+  align-items: center;
+}
+
+.jules-avatar{
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 2rem;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.creator-text{
+    font-weight: 300;
+}
+
+.creator-hover{
+    color: white;
+}
+
+.creator-hover:hover{
+    color:  hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+/* mobile acess*/
+
+@media screen and (max-width: 300px) {
+    .eth {
+      flex-direction: column;
+    }
+  }
